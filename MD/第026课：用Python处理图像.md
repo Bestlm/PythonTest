@@ -49,7 +49,7 @@ Pillow中最为重要的是`Image`类，可以通过`Image`模块的`open`函数
    image.crop((80, 20, 310, 360)).show()
    ```
 
-   ![](./res/image-crop.png)
+   ![](res/image-crop.png)
 
 3. 生成缩略图
 
@@ -59,7 +59,7 @@ Pillow中最为重要的是`Image`类，可以通过`Image`模块的`open`函数
    image.show()
    ```
 
-   ![](./res/image-thumbnail.png)
+   ![](res/image-thumbnail.png)
 
 4. 缩放和黏贴图像
 
@@ -77,7 +77,7 @@ Pillow中最为重要的是`Image`类，可以通过`Image`模块的`open`函数
    luohao_image.show()
    ```
 
-   ![](./res/image-paste.png)
+   ![](res/image-paste.png)
 
 5. 旋转和翻转
 
@@ -91,9 +91,9 @@ Pillow中最为重要的是`Image`类，可以通过`Image`模块的`open`函数
    image.transpose(Image.FLIP_LEFT_RIGHT).show()
    ```
 
-   ![](./res/image-rotate.png)
+   ![](res/image-rotate.png)
 
-   ![](./res/image-transpose.png)
+   ![](res/image-transpose.png)
 
 6. 操作像素
 
@@ -105,7 +105,7 @@ Pillow中最为重要的是`Image`类，可以通过`Image`模块的`open`函数
    image.show()
    ```
 
-   ![](./res/image-putpixel.png)
+   ![](res/image-putpixel.png)
 
 7. 滤镜效果
 
@@ -117,7 +117,7 @@ Pillow中最为重要的是`Image`类，可以通过`Image`模块的`open`函数
    image.filter(ImageFilter.CONTOUR).show()
    ```
 
-   ![](./res/image-filter.png)
+   ![](res/image-filter.png)
 
 ### 使用Pillow绘图
 
