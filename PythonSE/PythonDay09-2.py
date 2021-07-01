@@ -29,3 +29,53 @@ print(s3.center(20, '*'))
 print(s3.rjust(20))
 # ljust以宽度20将字符串左对齐并在右侧填充
 print(s3.ljust(20, '~'))
+print('=================')
+# 格式化
+a = 123
+b = 321
+print('%d * %d = %d' % (a, b, a * b))
+# 字符串的方法完成字符串格式化
+print('{0} * {1} = {2} '.format(a, b, a * b))
+# 占位符格式化
+d = 3.1415926
+d1 = -1
+d2 = 123
+print('d=%f' % d)
+print('{:.2f}'.format(d))
+# print('d=%.2f' % d)
+print('{:+.2f}'.format(d))
+# print('d=%+.2f' % d)
+print('{:+.2f}'.format(d1))
+# print('d1=%+.2f' % d1)
+print('{:.0f}'.format(d))
+# print('d=%.0f' % d)
+print('{:0>8d}'.format(d2))  # 左补零到8位
+# print('%08d' % d2)  # 左补零到8位
+# 左补x到10位
+print('{:x>10d}'.format(d2))
+# 右补X到10位
+print('{:x<10d}'.format(d2))
+# 左补空格到10位
+print('{:>10d}'.format(d2))
+# 右补空格到10位
+print('{:<10d}'.format(d2))
+d3 = 1234567892
+# 逗号分割格式
+print('{:,}'.format(d3))
+# 百分比格式 .后面的数字表示保留几位小数
+d4 = 0.123
+print('{:.2%}'.format(d4))
+# 科学记数法
+print('{:.2e}'.format(d2))
+
+'''
+字符串修剪操作
+'''
+s = '         bestlm3034@gmail.com    \t\r\n'
+print(s)
+# strip方法获得字符串修剪左右两侧空格之后的字符串
+print(s.strip())
+# lstrip
+print(s.lstrip())
+# rstrip
+print(s.rstrip())
